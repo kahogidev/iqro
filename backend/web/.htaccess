@@ -1,0 +1,8 @@
+RewriteEngine on
+
+# Fayl yoki papka mavjud bo‘lsa, to‘g‘ridan-to‘g‘ri uni chaqir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Aks holda index.php ga yo‘naltir
+RewriteRule . index.php
