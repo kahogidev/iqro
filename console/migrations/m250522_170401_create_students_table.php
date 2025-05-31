@@ -55,7 +55,7 @@ class m250522_170401_create_students_table extends Migration
             'CASCADE',
             'CASCADE'
         );
-        
+
     }
 
     public function down()

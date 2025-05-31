@@ -18,7 +18,7 @@ class StudentsSearch extends Students
     {
         return [
             [['id', 'user_id'], 'integer'],
-            [['first_name', 'last_name', 'middle_name', 'birth_date', 'birth_place', 'address', 'father_name', 'mother_name', 'mother_phone', 'father_workplace', 'mother_workplace', 'father_position', 'mother_position', 'talents', 'activities', 'behavior', 'health', 'special_needs', 'admission_date', 'photo', 'direction', 'emergency_contact', 'emergency_phone'], 'safe'],
+            [['first_name', 'last_name', 'middle_name', 'birth_date', 'birth_place', 'address', 'father_name', 'mother_name', 'mother_phone', 'father_workplace', 'mother_workplace', 'father_position', 'mother_position', 'talents', 'activities', 'behavior', 'health', 'special_needs', 'admission_date', 'photo', 'specialization', 'emergency_contact', 'emergency_phone'], 'safe'],
         ];
     }
 
@@ -83,7 +83,7 @@ class StudentsSearch extends Students
             ->andFilterWhere(['like', 'health', $this->health])
             ->andFilterWhere(['like', 'special_needs', $this->special_needs])
             ->andFilterWhere(['like', 'photo', $this->photo])
-            ->andFilterWhere(['like', 'direction', $this->direction])
+            ->andFilterWhere(['like', 'specialization', $this->specialization])
             ->andFilterWhere(['like', 'emergency_contact', $this->emergency_contact])
             ->andFilterWhere(['like', 'emergency_phone', $this->emergency_phone]);
 

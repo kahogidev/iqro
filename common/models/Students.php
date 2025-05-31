@@ -30,7 +30,6 @@ use yii\db\ActiveRecord;
  * @property string|null $special_needs
  * @property string|null $admission_date
  * @property string|null $photo
- * @property string|null $direction
  * @property string|null $emergency_contact
  * @property string|null $emergency_phone
  *
@@ -56,8 +55,8 @@ class Students extends ActiveRecord
             [['user_id'], 'integer'],
             [['birth_date', 'admission_date'], 'safe'],
             [['talents', 'activities', 'behavior', 'health', 'special_needs'], 'string'],
-            [['first_name', 'last_name', 'middle_name', 'birth_place', 'address', 'father_name', 'mother_name', 'father_workplace', 'mother_workplace', 'father_position', 'mother_position', 'photo', 'direction', 'emergency_contact'], 'string', 'max' => 255],
-            [['mother_phone', 'emergency_phone'], 'string', 'max' => 15],
+            [['first_name', 'last_name', 'middle_name', 'birth_place', 'address', 'father_name', 'mother_name', 'father_workplace', 'mother_workplace', 'father_position', 'mother_position', 'photo', 'emergency_contact'], 'string', 'max' => 255],
+            [['mother_phone', 'father_phone', 'emergency_phone'], 'string', 'max' => 15],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -69,29 +68,31 @@ class Students extends ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
-            'first_name' => 'First Name',
-            'middle_name' => 'Middle Name',
-            'birth_date' => 'Birth Date',
-            'birth_place' => 'Birth Place',
-            'address' => 'Address',
-            'father_name' => 'Father Name',
-            'mother_name' => 'Mother Name',
-            'mother_phone' => 'Mother Phone',
-            'father_workplace' => 'Father Workplace',
-            'mother_workplace' => 'Mother Workplace',
-            'father_position' => 'Father Position',
-            'mother_position' => 'Mother Position',
-            'talents' => 'Talents',
-            'activities' => 'Activities',
-            'behavior' => 'Behavior',
-            'health' => 'Health',
-            'special_needs' => 'Special Needs',
-            'admission_date' => 'Admission Date',
-            'photo' => 'Photo',
+            'user_id' => 'O`quvchi ID',
+            'first_name' => 'Ism',
+            'last_name' => 'Familiya',
+            'middle_name' => 'Otasining ismi',
+            'birth_date' => 'Tug\'ilgan sanasi',
+            'birth_place' => 'Tug\'ilgan joyi',
+            'address' => 'Manzili',
+            'father_name' => 'Otasining ismi-familiyasi',
+            'mother_name' => 'Onasining ismi-familiyasi',
+            'father_phone' => 'Otasining telefoni',
+            'mother_phone' => 'Onasining telefon raqami',
+            'father_workplace' => 'Otasining ish joyi',
+            'mother_workplace' => 'Onasining ish joyi',
+            'father_position' => 'Otasining lavozimi',
+            'mother_position' => 'Onasining lavozimi',
+            'talents' => 'Qobiliyatlari',
+            'activities' => 'Darsdan tashqari ishtiroki',
+            'behavior' => 'Xulq-atvori',
+            'health' => 'Salomatligi',
+            'special_needs' => 'Maxsus ehtiyojlari',
+            'admission_date' => 'Maktabga kelgan sana',
+            'photo' => 'O\'quvchining rasmi',
             'specialization' => 'Yo\'nalishi',
-            'emergency_contact' => 'Emergency Contact',
-            'emergency_phone' => 'Emergency Phone',
+            'emergency_contact' => 'Qo\'shimcha raqam egasi',
+            'emergency_phone' => 'Qo\'shimcha raqam',
         ];
     }
 

@@ -15,26 +15,31 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="students-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
+    <h1 style="font-size: 30px!important; margin: 10px"><?= $this->title?></h1>
+    <div class="card h-100 p-3 radius-12 m-3" >
     <p>
-        <?= Html::a('Create Students', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('O\'quvchi yaratish', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+        <div class="card-body p-24">
+            <div class="table-responsive  scroll-sm">
 
-    <?= GridView::widget([
+            <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'tableOptions' => ['class' => 'table bordered-table sm-table mb-0'],
+
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'user_id',
+//            'id',
+
+//            'user_id',
             'first_name',
             'last_name',
             'middle_name',
-            //'birth_date',
+            'birth_date',
             //'birth_place',
             //'address',
             //'father_name',
@@ -51,17 +56,37 @@ $this->params['breadcrumbs'][] = $this->title;
             //'special_needs:ntext',
             //'admission_date',
             //'photo',
-            //'direction',
+//            'direction',
             //'emergency_contact',
             //'emergency_phone',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Students $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
-                 }
+                'header' => 'Amallar',
+                'headerOptions' => ['style' => 'text-align:center'],
+                'template' => '{buttons}',
+                'contentOptions' => ['style' => 'min-width:150px;max-width:150px;width:150px', 'class' => 'v-align-middle'],
+                'buttons' => [
+                    'buttons' => function ($url, $model) {
+                        $controller = Yii::$app->controller->id;
+                        $code = <<<BUTTONS
+                                <div class="d-flex align-items-center gap-10 justify-content-center">
+                                    <a href="{$controller}/update?id={$model->id}" class="bg-info-focus bg-hover-info-200 text-info-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
+                                        <iconify-icon icon="majesticons:eye-line" class="icon text-xl"></iconify-icon>
+                                    </a>
+                                    <a href="{$controller}/delete?id={$model->id}" id="{$controller}{$model->id}" class="bg-info-focus bg-hover-info-200 text-info-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
+                                        <iconify-icon icon="majesticons:eye-line" class="icon text-xl"></iconify-icon>
+                                    </a>
+                                </div>
+BUTTONS;
+                        return $code;
+                    }
+
+                ],
             ],
         ],
     ]); ?>
-
+            </div>
+        </div>
+    </div>
 
 </div>
