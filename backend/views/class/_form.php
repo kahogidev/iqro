@@ -9,17 +9,21 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="classes-form">
+    <div class="dashboard-main-body" style="margin: 30px;">
+        <div class="card h-100 p-0 radius-12 p-5">
 
     <?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'class')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'class_name')->textInput(['maxlength' => true]) ?>
-
+            <div class="row">
+                <div class="col-md-6">
+                    <?= $form->field($model, 'class')->textInput(['maxlength' => true]) ?>
+                </div>
+                <div class="col-md-6">
+                    <?= $form->field($model, 'class_name')->textInput(['maxlength' => true]) ?>
+                </div>
 
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Saqlash', ['class' => 'btn btn-primary', 'style'=>'margin-top:20px']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

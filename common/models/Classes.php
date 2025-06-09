@@ -44,10 +44,15 @@ class Classes extends ActiveRecord
     {
         return [
             'id' => 'ID',
-            'class' => 'Class',
-            'class_name' => 'Class Name',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'class' => 'Sinflar',
+            'class_name' => 'Sinf Nomi',
+            'created_at' => 'Yaratilgan sana',
+            'updated_at' => 'Yangilangan sana',
         ];
+    }
+    public function getTests()
+    {
+        return $this->hasMany(Tests::class, ['id' => 'test_id'])
+            ->viaTable('test_class', ['class_id' => 'id']);
     }
 }

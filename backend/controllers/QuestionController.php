@@ -2,16 +2,17 @@
 
 namespace backend\controllers;
 
-use common\models\Students;
-use common\models\search\StudentsSearch;
+use common\models\Answers;
+use common\models\Questions;
+use common\models\search\QuestionsSearch;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
- * StudentController implements the CRUD actions for Students model.
+ * QuestionController implements the CRUD actions for Questions model.
  */
-class StudentController extends Controller
+class QuestionController extends Controller
 {
     /**
      * @inheritDoc
@@ -25,7 +26,6 @@ class StudentController extends Controller
                     'class' => VerbFilter::className(),
                     'actions' => [
                         'delete' => ['POST'],
-                        'update' => ['GET', 'POST'],
                     ],
                 ],
             ]
@@ -33,13 +33,13 @@ class StudentController extends Controller
     }
 
     /**
-     * Lists all Students models.
+     * Lists all Questions models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new StudentsSearch();
+        $searchModel = new QuestionsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -49,7 +49,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Displays a single Students model.
+     * Displays a single Questions model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -62,38 +62,30 @@ class StudentController extends Controller
     }
 
     /**
-     * Creates a new Students model.
+     * Creates a new Questions model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Students();
-
-        if ($this->request->isPost && $model->load($this->request->post())) {
-            $user = new \common\models\User();
-            $user->username = $model->first_name . $model->last_name;
-            $user->email = $model->first_name . '.' . $model->last_name . '@example.com';
-            $user->role = \common\models\User::ROLE_STUDENT;
-            $password = $model->first_name . $model->last_name;
-            $user->setPassword($password);
-            $user->generateAuthKey();
-            if ($user->save()) {
-                $model->user_id = $user->id;
-                if ($model->save()) {
-                    return $this->redirect(['index']);
-                }
+        $model = new Questions();
+        $answers = [new Answers()]; // At least one empty answer model
+        if ($this->request->isPost) {
+            if ($model->load($this->request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
             $model->loadDefaultValues();
         }
+
         return $this->render('create', [
             'model' => $model,
+            'answers' => $answers,
         ]);
     }
 
     /**
-     * Updates an existing Students model.
+     * Updates an existing Questions model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -113,7 +105,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Deletes an existing Students model.
+     * Deletes an existing Questions model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -127,15 +119,15 @@ class StudentController extends Controller
     }
 
     /**
-     * Finds the Students model based on its primary key value.
+     * Finds the Questions model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Students the loaded model
+     * @return Questions the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Students::findOne(['id' => $id])) !== null) {
+        if (($model = Questions::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

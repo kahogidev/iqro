@@ -5,86 +5,98 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
+
 
 /** @var yii\web\View $this */
 /** @var common\models\search\StudentsSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Students';
+$this->title = 'O\'quvchilar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="students-index">
 
-    <h1 style="font-size: 30px!important; margin: 10px"><?= $this->title?></h1>
-    <div class="card h-100 p-3 radius-12 m-3" >
-    <p>
-        <?= Html::a('O\'quvchi yaratish', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <h1 style="font-size: 30px!important; margin: 10px"><?= $this->title ?></h1>
+    <div class="card h-100 p-3 radius-12 m-3">
+        <p>
+            <?= Html::a('O\'quvchi yaratish', ['create'], ['class' => 'btn btn-primary']) ?>
+        </p>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+        <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
         <div class="card-body p-24">
             <div class="table-responsive  scroll-sm">
 
-            <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'tableOptions' => ['class' => 'table bordered-table sm-table mb-0'],
 
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+                <?= GridView::widget([
+                    'dataProvider' => $dataProvider,
+                    'filterModel' => $searchModel,
+                    'tableOptions' => ['class' => 'table bordered-table sm-table mb-0'],
+
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
 
 //            'id',
 
 //            'user_id',
-            'first_name',
-            'last_name',
-            'middle_name',
-            'birth_date',
-            //'birth_place',
-            //'address',
-            //'father_name',
-            //'mother_name',
-            //'mother_phone',
-            //'father_workplace',
-            //'mother_workplace',
-            //'father_position',
-            //'mother_position',
-            //'talents:ntext',
-            //'activities:ntext',
-            //'behavior:ntext',
-            //'health:ntext',
-            //'special_needs:ntext',
-            //'admission_date',
-            //'photo',
+                        'first_name',
+                        'last_name',
+                        'middle_name',
+                        'birth_date',
+                        //'birth_place',
+                        //'address',
+                        //'father_name',
+                        //'mother_name',
+                        //'mother_phone',
+                        //'father_workplace',
+                        //'mother_workplace',
+                        //'father_position',
+                        //'mother_position',
+                        //'talents:ntext',
+                        //'activities:ntext',
+                        //'behavior:ntext',
+                        //'health:ntext',
+                        //'special_needs:ntext',
+                        //'admission_date',
+                        //'photo',
 //            'direction',
-            //'emergency_contact',
-            //'emergency_phone',
-            [
-                'class' => ActionColumn::className(),
-                'header' => 'Amallar',
-                'headerOptions' => ['style' => 'text-align:center'],
-                'template' => '{buttons}',
-                'contentOptions' => ['style' => 'min-width:150px;max-width:150px;width:150px', 'class' => 'v-align-middle'],
-                'buttons' => [
-                    'buttons' => function ($url, $model) {
-                        $controller = Yii::$app->controller->id;
-                        $code = <<<BUTTONS
-                                <div class="d-flex align-items-center gap-10 justify-content-center">
-                                    <a href="{$controller}/update?id={$model->id}" class="bg-info-focus bg-hover-info-200 text-info-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
-                                        <iconify-icon icon="majesticons:eye-line" class="icon text-xl"></iconify-icon>
-                                    </a>
-                                    <a href="{$controller}/delete?id={$model->id}" id="{$controller}{$model->id}" class="bg-info-focus bg-hover-info-200 text-info-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
-                                        <iconify-icon icon="majesticons:eye-line" class="icon text-xl"></iconify-icon>
-                                    </a>
-                                </div>
-BUTTONS;
-                        return $code;
-                    }
+                        //'emergency_contact',
+                        //'emergency_phone',
+                        [
+                            'class' => ActionColumn::className(),
+                            'header' => 'Amallar',
+                            'headerOptions' => ['style' => 'text-align:center'],
+                            'template' => '{buttons}',
+                            'contentOptions' => [
+                                'style' => 'min-width:150px;max-width:150px;width:150px',
+                                'class' => 'v-align-middle'
+                            ],
+                            'buttons' => [
+                                'buttons' => function ($url, $model) {
+                                    $controller = Yii::$app->controller->id;
+                                    $deleteUrl = Url::to(["$controller/delete", 'id' => $model->id]);
 
-                ],
-            ],
-        ],
-    ]); ?>
+                                    $csrfInput = Html::hiddenInput(Yii::$app->request->csrfParam, Yii::$app->request->getCsrfToken());
+
+                                    $code = <<<BUTTONS
+                <div class="d-flex align-items-center gap-10 justify-content-center">
+                    <a href="{$controller}/update?id={$model->id}" class="bg-success-focus text-success-600 bg-hover-success-200 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
+                        <iconify-icon  icon="lucide:edit" class="menu-icon"></iconify-icon>
+                    </a>
+                    <form method="post" action="{$deleteUrl}" style="display:inline;" onsubmit="return confirm('Haqiqatan ham o‘chirmoqchimisiz?')">
+                        {$csrfInput}
+                        <button type="submit" class="border-0 bg-transparent remove-item-btn bg-danger-focus bg-hover-danger-200 text-danger-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle">
+                            <iconify-icon icon="fluent:delete-24-regular" class="menu-icon"></iconify-icon>
+                        </button>
+                    </form>
+                </div>
+BUTTONS;
+                                    return $code;
+                                }
+                            ],
+                        ],
+                    ],
+                ]); ?>
             </div>
         </div>
     </div>

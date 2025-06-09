@@ -2,16 +2,16 @@
 
 namespace backend\controllers;
 
-use common\models\Students;
-use common\models\search\StudentsSearch;
+use common\models\Teachers;
+use common\models\search\TeachersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * StudentController implements the CRUD actions for Students model.
+ * TeacherController implements the CRUD actions for Teachers model.
  */
-class StudentController extends Controller
+class TeacherController extends Controller
 {
     /**
      * @inheritDoc
@@ -25,7 +25,6 @@ class StudentController extends Controller
                     'class' => VerbFilter::className(),
                     'actions' => [
                         'delete' => ['POST'],
-                        'update' => ['GET', 'POST'],
                     ],
                 ],
             ]
@@ -33,13 +32,13 @@ class StudentController extends Controller
     }
 
     /**
-     * Lists all Students models.
+     * Lists all Teachers models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new StudentsSearch();
+        $searchModel = new TeachersSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -49,7 +48,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Displays a single Students model.
+     * Displays a single Teachers model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -62,19 +61,19 @@ class StudentController extends Controller
     }
 
     /**
-     * Creates a new Students model.
+     * Creates a new Teachers model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Students();
+        $model = new Teachers();
 
         if ($this->request->isPost && $model->load($this->request->post())) {
             $user = new \common\models\User();
             $user->username = $model->first_name . $model->last_name;
             $user->email = $model->first_name . '.' . $model->last_name . '@example.com';
-            $user->role = \common\models\User::ROLE_STUDENT;
+            $user->role = \common\models\User::ROLE_TEACHER;
             $password = $model->first_name . $model->last_name;
             $user->setPassword($password);
             $user->generateAuthKey();
@@ -93,7 +92,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Updates an existing Students model.
+     * Updates an existing Teachers model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -113,7 +112,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Deletes an existing Students model.
+     * Deletes an existing Teachers model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -127,15 +126,15 @@ class StudentController extends Controller
     }
 
     /**
-     * Finds the Students model based on its primary key value.
+     * Finds the Teachers model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Students the loaded model
+     * @return Teachers the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Students::findOne(['id' => $id])) !== null) {
+        if (($model = Teachers::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
