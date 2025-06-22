@@ -73,4 +73,9 @@ class Questions extends ActiveRecord
     {
         return $this->hasMany(Answers::class, ['question_id' => 'id']);
     }
+    public function getCorrectAnswer()
+    {
+        $correctAnswer = $this->getAnswers()->where(['is_correct' => true])->one();
+        return $correctAnswer ? $correctAnswer->answer_text : null; // Adjust the field name as needed
+    }
 }

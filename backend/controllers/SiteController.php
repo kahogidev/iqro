@@ -9,14 +9,8 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 
-/**
- * Site controller
- */
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
     public function behaviors()
     {
         return [
@@ -43,9 +37,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function actions()
     {
         return [
@@ -55,21 +46,19 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
     public function actionIndex()
     {
-        return $this->render('index');
+        $totalStudents = \common\models\Students::find()->count();
+        $totalTeachers = \common\models\Teachers::find()->count();
+        $averageTestScore = \common\models\TestResults::find()->average('percentage'); // Assuming 'score' is the column for test results
+
+        return $this->render('dashboard', [
+            'totalStudents' => $totalStudents,
+            'totalTeachers' => $totalTeachers,
+            'averageTestScore' => $averageTestScore,
+        ]);
     }
 
-    /**
-     * Login action.
-     *
-     * @return string|Response
-     */
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
@@ -80,7 +69,15 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            $user = Yii::$app->user->identity;
+            if ($user->role == \common\models\User::ROLE_STUDENT) {
+                return $this->redirect(['student/dashboard']);
+            } elseif ($user->role == \common\models\User::ROLE_TEACHER) {
+                return $this->redirect(['teacher/dashboard']);
+            } elseif ($user->role == \common\models\User::ROLE_SUPERADMIN) {
+                return $this->redirect(['site/index']);
+            }
+            return $this->goHome();
         }
 
         $model->password = '';
@@ -90,15 +87,9 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * Logout action.
-     *
-     * @return Response
-     */
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 }

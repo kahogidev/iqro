@@ -10,8 +10,10 @@ use common\models\TeacherClass;
 use common\models\Teachers;
 use Yii;
 use yii\data\ActiveDataProvider;
+use yii\data\ArrayDataProvider;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
+use Mpdf\Mpdf;
 use yii\web\NotFoundHttpException;
 
 /**
@@ -156,20 +158,36 @@ class ClassController extends Controller
     }
 
 
+
     public function actionAssignStudents($id)
     {
-        $class = Classes::findOne($id);
-
-        $assignedDataProvider = new ActiveDataProvider([
-            'query' => Students::find()
-                ->alias('s')
-                ->innerJoin('student_group sg', 'sg.student_id = s.id')
-                ->where(['sg.group_id' => $id]),
-            'pagination' => ['pageSize' => 10],
+        $emptyProvider = new ArrayDataProvider([
+            'allModels' => [],
+            'pagination' => false,
         ]);
 
+        $query = Students::find()
+            ->alias('s')
+            ->innerJoin('student_group sg', 'sg.student_id = s.id')
+            ->where(['sg.group_id' => $id]);
+
+        Yii::info("ASSIGNED query: " . $query->createCommand()->getRawSql(), __METHOD__);
+
+        $assignedDataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => ['pageSize' => 20],
+        ]);
+        if ($assignedDataProvider->getCount() === 0) {
+            $assignedDataProvider = $emptyProvider; // Agar hech qanday o'quvchi bo'lmasa, bo'sh provider
+        }
+
+
+
+        $teachers = Teachers::find()->limit(20)->all(); // ← faqat sinov uchun
+
         $unassignedStudents = Students::find()
-            ->where(['NOT IN', 'id', StudentGroup::find()->select('student_id')->where(['group_id' => $id])])
+            ->where(['NOT IN', 'id', StudentGroup::find()->select('student_id')])
+
             ->all();
 
         if (Yii::$app->request->isPost) {
@@ -179,20 +197,23 @@ class ClassController extends Controller
                 $group->group_id = $id;
                 $group->student_id = $studentId;
                 $group->added_by = Yii::$app->user->id;
-                $group->save();
+                if (!$group->save()) {
+                    Yii::error('StudentGroup save error: ' . json_encode($group->errors), __METHOD__);
+                }
             }
             Yii::$app->session->setFlash('success', 'O‘quvchilar biriktirildi!');
             return $this->redirect(['assign-students', 'id' => $id]);
         }
-        $teachers = Teachers::find()->all();
+
 
         return $this->render('assign-students', [
-            'id' => $id,
             'assignedDataProvider' => $assignedDataProvider,
             'unassignedStudents' => $unassignedStudents,
             'teachers' => $teachers,
+            'id' => $id,
         ]);
     }
+
 
     public function actionRemoveStudent($group_id, $student_id)
     {
@@ -207,6 +228,27 @@ class ClassController extends Controller
 
         return $this->redirect(['assign-students', 'id' => $group_id]);
     }
+    public function actionExportAssignedStudents($id)
+    {
+        $group = Classes::findOne($id);
+        if (!$group) {
+            throw new NotFoundHttpException("Sinf topilmadi.");
+        }
 
+        $students = Students::find()
+            ->alias('s')
+            ->innerJoin('student_group sg', 'sg.student_id = s.id')
+            ->where(['sg.group_id' => $id])
+            ->all();
+
+        $html = $this->renderPartial('export-assigned-students', [
+            'group' => $group,
+            'students' => $students,
+        ]);
+
+        $mpdf = new Mpdf();
+        $mpdf->WriteHTML($html);
+        $mpdf->Output("assigned_students_class_{$id}.pdf", 'D'); // 'D' = download, 'I' = inline view
+    }
 
 }

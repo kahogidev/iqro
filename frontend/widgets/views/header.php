@@ -1,3 +1,8 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 <!-- Start Navbar Area -->
 <div class="navbar-area navbar-area-two">
     <!-- Menu For Mobile Device -->
@@ -208,9 +213,8 @@
                         </div>
 
                         <div class="register">
-                            <a href="my-account.html" class="default-btn">
-                                Login / Register
-                            </a>
+                            <a href="<?= Url::to(['/site/login'], true) ?>" class="default-btn">Login</a>
+
                         </div>
                     </div>
                     <!-- End Other Option -->

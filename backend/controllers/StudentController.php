@@ -2,11 +2,17 @@
 
 namespace backend\controllers;
 
+use common\models\ExcelImportForm;
 use common\models\Students;
 use common\models\search\StudentsSearch;
+use common\models\Tests;
+use Mpdf\Mpdf;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * StudentController implements the CRUD actions for Students model.
@@ -78,6 +84,7 @@ class StudentController extends Controller
             $password = $model->first_name . $model->last_name;
             $user->setPassword($password);
             $user->generateAuthKey();
+            $user->status = \common\models\User::STATUS_ACTIVE;
             if ($user->save()) {
                 $model->user_id = $user->id;
                 if ($model->save()) {
@@ -125,6 +132,127 @@ class StudentController extends Controller
 
         return $this->redirect(['index']);
     }
+    // In StudentController.php
+    // In backend/controllers/StudentController.php
+
+
+    public function actionDashboard()
+    {
+        $student = \common\models\Students::findOne(['user_id' => Yii::$app->user->id]);
+        return $this->render('dashboard', [
+            'model' => $student,
+        ]);
+    }
+
+    public function actionTest($id = null)
+    {
+        $student = \common\models\Students::findOne(['user_id' => Yii::$app->user->id]);
+        $tests = [];
+
+        if ($student) {
+            $groupIds = \common\models\StudentGroup::find()
+                ->select('group_id')
+                ->where(['student_id' => $student->id])
+                ->column();
+
+            if (!empty($groupIds)) {
+                $tests = \common\models\Tests::find()
+                    ->joinWith('classes') // adjust relation name if needed
+                    ->where(['classes.id' => $groupIds])
+                    ->all();
+            }
+        }
+
+        // If $id is provided, find the specific test
+        $test = null;
+        if ($id) {
+            $test = \common\models\Tests::findOne($id);
+            if (!$test) {
+                throw new \yii\web\NotFoundHttpException('Test not found');
+            }
+        }
+
+        return $this->render('student-tests', [
+            'tests' => $tests,
+            'test' => $test,
+            'student' => $student,
+            // 'questions' => $questions, // Load as needed
+        ]);
+    }
+
+    public function actionCompleteTest($testId)
+    {
+        $test = \common\models\Tests::findOne($testId);
+        if (!$test) {
+            throw new \yii\web\NotFoundHttpException('Test not found.');
+        }
+
+        $questions = $test->questions;
+        if (empty($questions)) {
+            throw new \yii\web\NotFoundHttpException('No questions found for this test.');
+        }
+
+        if (Yii::$app->request->isPost) {
+            $answers = Yii::$app->request->post('answers', []);
+            $correct = 0;
+
+            foreach ($questions as $question) {
+                if (isset($answers[$question->id])) {
+                    $selectedAnswer = \common\models\Answers::findOne($answers[$question->id]);
+                    if ($selectedAnswer && $selectedAnswer->is_correct) {
+                        $correct++;
+                    }
+                }
+            }
+
+                $totalQuestions = $test->question_limit;
+            $percentage = $totalQuestions ? round(($correct / $totalQuestions) * 100, 2) : 0;
+
+            // ⚠️ Avvalo user_id orqali student topiladi
+            $student = \common\models\Students::find()->where(['user_id' => Yii::$app->user->id])->one();
+            if (!$student) {
+                throw new \yii\web\NotFoundHttpException('Talaba profili topilmadi.');
+            }
+
+            $result = new \common\models\TestResults();
+            $result->student_id = $student->id; // ✅ To‘g‘ri student_id
+            $result->test_id = $test->id;
+            $result->teacher_id = $test->created_by;
+            $result->correct_answers = $correct;
+            $result->percentage = $percentage;
+            $result->created_at = time();
+
+            if (!$result->save()) {
+                Yii::error($result->getErrors(), __METHOD__);
+                throw new \yii\web\ServerErrorHttpException('Test natijalari saqlanmadi.');
+            }
+
+            return $this->redirect(['history']);
+        }
+
+        return $this->render('take', [
+            'test' => $test,
+            'questions' => $questions,
+        ]);
+    }
+    public function actionHistory()
+    {
+        $student = \common\models\Students::findOne(['user_id' => Yii::$app->user->id]);
+        $results = [];
+
+        if ($student) {
+            $results = \common\models\TestResults::find()
+                ->where(['student_id' => $student->id])
+                ->orderBy(['created_at' => SORT_DESC])
+                ->all();
+        }
+
+        return $this->render('history', [
+            'results' => $results,
+            'student' => $student,
+        ]);
+    }
+
 
     /**
      * Finds the Students model based on its primary key value.
@@ -141,4 +269,58 @@ class StudentController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    public function actionImport()
+    {
+        $model = new ExcelImportForm();
+
+        if (Yii::$app->request->isPost) {
+            $model->excelFile = UploadedFile::getInstance($model, 'excelFile');
+            if ($model->uploadAndProcess()) {
+                Yii::$app->session->setFlash('success', 'O‘quvchilar muvaffaqiyatli import qilindi.');
+                return $this->redirect(['index']);
+            }
+        }
+
+        return $this->render('import', ['model' => $model]);
+    }
+    public function actionExportPdf()
+    {
+        $students = Students::find()->all();
+
+        $mpdf = new Mpdf();
+        $html = '<h1>Students List</h1>';
+        $html .= '<table border="1" cellpadding="5" cellspacing="0">';
+        $html .= '<tr>
+                <th>#</th>
+                <th>Ism</th>
+                <th>Familiya</th>
+                <th>Otasining ismi</th>
+                <th>Otasining telefon raqami</th>
+                <th>Onasining telefon raqami</th>
+              </tr>';
+
+        $counter = 1; // Initialize counter for serial numbers
+        foreach ($students as $student) {
+            $html .= '<tr>
+                    <td>' . $counter . '</td>
+                    <td>' . $student->first_name . '</td>
+                    <td>' . $student->last_name . '</td>
+                    <td>' . $student->middle_name . '</td>
+                    <td>' . $student->father_phone . '</td>
+                    <td>' . $student->mother_phone . '</td>
+                  </tr>';
+            $counter++; // Increment counter
+        }
+
+        $html .= '</table>';
+        $mpdf->WriteHTML($html);
+
+        $fileName = 'students.pdf';
+        $filePath = Yii::getAlias('@webroot') . '/exports/' . $fileName;
+        $mpdf->Output($filePath, \Mpdf\Output\Destination::FILE);
+
+        return Yii::$app->response->sendFile($filePath);
+    }
+
 }

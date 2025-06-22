@@ -1,5 +1,6 @@
 <?php
 
+use common\models\Classes;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -22,7 +23,7 @@ use yii\widgets\ActiveForm;
                     <?= $form->field($model, 'subject')->textInput(['type' => 'text', 'maxlength' => true]) ?>
                 </div>
                 <div class="col-4">
-                    <?= $form->field($model, 'question_limit')->textInput(['type' => 'number']) ?>
+                    <?= $form->field($model, 'question_limit')->textInput(['type' => 'number', 'min' => 1, 'placeholder' => 'Enter question limit']) ?>
                 </div>
             </div>
 
@@ -31,7 +32,7 @@ use yii\widgets\ActiveForm;
                     <?= $form->field($model, 'start_time')->textInput(['type' => 'datetime-local', 'id' => 'start-time']) ?>
                 </div>
                 <div class="col-4">
-                    <?= $form->field($model, 'duration')->textInput(['type' => 'number', 'id' => 'duration', 'placeholder' => 'Enter duration in minutes']) ?>
+                    <?= $form->field($model, 'duration')->textInput(['type' => 'number', 'id' => 'duration', 'min' => 1, 'placeholder' => 'Enter duration in minutes']) ?>
                 </div>
                 <div class="col-4">
                     <?= $form->field($model, 'end_time')->textInput(['type' => 'datetime-local', 'id' => 'end-time', 'readonly' => true]) ?>
@@ -40,7 +41,7 @@ use yii\widgets\ActiveForm;
 
             <div class="row">
                 <div class="col-4">
-                    <?= $form->field($model, 'created_by')->dropDownList(
+                    <?= $form->field($model, 'teacher_id')->dropDownList(
                         \yii\helpers\ArrayHelper::map(
                             \common\models\Teachers::find()->all(),
                             'id',
@@ -55,13 +56,29 @@ use yii\widgets\ActiveForm;
 
             <div class="col-4">
                 <div class="dropdown">
-                    <button class="btn btn-outline-secondary not-active px-18 py-11 dropdown-toggle toggle-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-outline-secondary px-18 py-11 dropdown-toggle toggle-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Select Classes
                     </button>
                     <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
-                        <?= $form->field($model, 'class_ids')->checkboxList(
-                            \yii\helpers\ArrayHelper::map(\common\models\Classes::find()->all(), 'id', 'name')
-                        ) ?>
+                        <?php
+                        echo $form->field($model, 'class_ids')->checkboxList(
+                            \yii\helpers\ArrayHelper::map(
+                                \common\models\Classes::find()->all(),
+                                'id',
+                                function($model) {
+                                    return $model->class . ' ' . $model->class_name;
+                                }
+                            ),
+                            [
+                                'item' => function($index, $label, $name, $checked, $value) {
+                                    return '<div class="form-check style-check d-flex align-items-center">'
+                                        . '<input class="form-check-input" type="checkbox" name="' . $name . '" value="' . $value . '"' . ($checked ? ' checked' : '') . ' id="class_' . $value . '">'
+                                        . '<label class="form-check-label" for="class_' . $value . '">' . $label . '</label>'
+                                        . '</div>';
+                                }
+                            ]
+                        );
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -80,11 +97,13 @@ use yii\widgets\ActiveForm;
                     const startTime = document.getElementById('start-time').value;
                     const duration = parseInt(document.getElementById('duration').value, 10);
 
-                    if (startTime && duration) {
+                    if (startTime && duration > 0) {
                         const startDate = new Date(startTime);
                         startDate.setMinutes(startDate.getMinutes() + duration);
                         const endTime = startDate.toISOString().slice(0, 16); // Format as 'YYYY-MM-DDTHH:mm'
                         document.getElementById('end-time').value = endTime;
+                    } else {
+                        document.getElementById('end-time').value = '';
                     }
                 }
             </script>

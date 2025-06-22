@@ -21,6 +21,17 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="card h-100 p-3 radius-12 m-3">
         <p>
             <?= Html::a('O\'quvchi yaratish', ['create'], ['class' => 'btn btn-primary']) ?>
+            <?= Html::a('Excel import qilish', ['import'], ['class' => 'btn btn-success']) ?>
+            <?php
+
+
+            /* Add Export PDF Button */
+            echo Html::a('Yuklab olish', ['student/export-pdf'], [
+                'class' => 'btn btn-primary',
+                'target' => '_blank', // Optional: Opens in a new tab
+                'data-pjax' => '0',   // Prevents PJAX interference
+            ]);
+            ?>
         </p>
 
         <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -39,10 +50,26 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'id',
 
 //            'user_id',
-                        'first_name',
-                        'last_name',
-                        'middle_name',
-                        'birth_date',
+                        [
+                                'attribute'=>'first_name',
+                                'contentOptions' => ['style' => 'min-width: 150px; max-width: 250px; width: 200px'],
+
+                            ],
+                        [
+                            'attribute'=>'last_name',
+                            'contentOptions' => ['style' => 'min-width: 150px; max-width: 250px; width: 200px'],
+
+                        ],
+                        [
+                            'attribute'=>'middle_name',
+                            'contentOptions' => ['style' => 'min-width: 150px; max-width: 250px; width: 200px'],
+
+                        ],
+                        [
+                            'attribute'=>'birth_date',
+                            'contentOptions' => ['style' => 'min-width: 150px; max-width: 250px; width: 200px'],
+
+                        ],
                         //'birth_place',
                         //'address',
                         //'father_name',
@@ -80,6 +107,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
                                     $code = <<<BUTTONS
                 <div class="d-flex align-items-center gap-10 justify-content-center">
+                    <a href="{$controller}/view?id={$model->id}" class="bg-primary-focus text-success-600 bg-hover-success-200 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
+                        <iconify-icon  icon="lucide:eye" class="menu-icon"></iconify-icon>
+                    </a>
                     <a href="{$controller}/update?id={$model->id}" class="bg-success-focus text-success-600 bg-hover-success-200 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle"> 
                         <iconify-icon  icon="lucide:edit" class="menu-icon"></iconify-icon>
                     </a>

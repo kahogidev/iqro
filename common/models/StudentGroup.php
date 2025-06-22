@@ -33,7 +33,7 @@ class StudentGroup extends ActiveRecord
     public function rules()
     {
         return [
-            [['group_id', 'student_id', 'added_by'], 'required'],
+            [['group_id', 'student_id'], 'required'],
             [['group_id', 'student_id', 'added_by'], 'integer'],
             [['added_at'], 'safe'],
             [['group_id'], 'exist', 'skipOnError' => true, 'targetClass' => Classes::class, 'targetAttribute' => ['group_id' => 'id']],

@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\Url;
 ?>
 
-<h2> <?= Html::encode("Sinfga biriktirilgan o‘quvchilar") ?> </h2>
+<h3> <?= Html::encode("Sinfga biriktirilgan o‘quvchilar") ?> </h3>
 <div class="card h-100 p-3 radius-12 m-3">
 
 <div class="card-body p-24">
@@ -17,43 +17,22 @@ use yii\helpers\Url;
         <button type="button" style="max-width: 300px" class="btn btn-secondary mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#addTeacherModal">
             O‘qituvchi biriktirish
         </button>
-
+        <?= Html::a('Export to PDF', ['class/export-assigned-students', 'id' => $id], [
+            'class' => 'btn btn-success mt-3 mb-4',
+            'target' => '_blank', // Optional: Opens in a new tab
+            'data-pjax' => '0',   // Prevents PJAX interference
+        ]) ?>
         <?= GridView::widget([
-    'dataProvider' => $assignedDataProvider,
-    'tableOptions' => ['class' => 'table bordered-table sm-table mb-0'],
-    'columns' => [
-        ['class' => 'yii\grid\SerialColumn'],
+            'dataProvider' => $assignedDataProvider,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
+                'first_name',
+                'last_name',
+//                'class',
+                'father_phone',
+            ],
+        ]); ?>
 
-        [
-            'class' => 'yii\grid\CheckboxColumn',
-            'checkboxOptions' => function ($model) {
-                return ['value' => $model->id];
-            },
-            'name' => 'assigned_ids[]', // Tanlanganlar array holatda yuboriladi
-        ],
-
-        'first_name',
-        'last_name',
-        'class',
-        'father_phone',
-
-        [
-            'class' => 'yii\grid\ActionColumn',
-            'template' => '{remove}',
-            'buttons' => [
-                'remove' => function ($url, $model) use ($id) {
-                    $url = Url::to(['remove-student', 'group_id' => $id, 'student_id' => $model->id]);
-                    return Html::a('<iconify-icon icon="fluent:delete-24-regular" class="menu-icon"></iconify-icon>', $url, [
-                        'title' => 'O‘quvchini sinfdan olib tashlash',
-                        'data-method' => 'post',
-                        'data-confirm' => 'Haqiqatan ham olib tashlamoqchimisiz?',
-                        'class' => 'remove-item-btn bg-danger-focus bg-hover-danger-200 text-danger-600 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle'
-                    ]);
-                }
-            ]
-        ],
-    ],
-]); ?>
     </div>
 </div>
 

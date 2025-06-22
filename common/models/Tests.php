@@ -8,6 +8,9 @@ use yii\db\ActiveRecord;
 class Tests extends ActiveRecord
 {
     public $class_ids = []; // Add this property
+    const STATUS_INACTIVE = 0;
+    const STATUS_ACTIVE = 1;
+    const STATUS_COMPLETED = 2;
 
     public static function tableName()
     {
@@ -17,17 +20,22 @@ class Tests extends ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'created_by', 'duration'], 'required'],
+            [['title',  'duration'], 'required'],
             [['description'], 'string'],
+            [['teacher_id'], 'integer'],
             [['question_limit', 'created_by', 'created_at', 'updated_at', 'duration'], 'integer'],
             [['start_time', 'end_time'], 'safe'],
+            [['status'], 'default', 'value' => self::STATUS_INACTIVE],
+            [['status'], 'in', 'range' => [self::STATUS_INACTIVE, self::STATUS_ACTIVE, self::STATUS_COMPLETED]],
             [['title'], 'string', 'max' => 255],
             [['subject'], 'string', 'max' => 100],
             [['class_ids'], 'each', 'rule' => ['integer']], // Validation for class_ids
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Teachers::class, 'targetAttribute' => ['created_by' => 'id']],
             [['is_imported'], 'boolean'],
+
         ];
     }
+
 
     public function afterFind()
     {
@@ -49,19 +57,22 @@ class Tests extends ActiveRecord
 
     public function saveClassAssignments()
     {
-        TestAssignments::deleteAll(['test_id' => $this->id]);
+        // Remove old assignments
+        \Yii::$app->db->createCommand()
+            ->delete('test_class', ['test_id' => $this->id])
+            ->execute();
+
+        // Insert new assignments
         if (!empty($this->class_ids)) {
+            $rows = [];
             foreach ($this->class_ids as $classId) {
-                $assignment = new TestAssignments();
-                $assignment->test_id = $this->id;
-                $assignment->class_id = $classId;
-                $assignment->status = 'pending';
-                $assignment->assigned_at = time();
-                $assignment->save();
+                $rows[] = [$this->id, $classId];
             }
+            \Yii::$app->db->createCommand()
+                ->batchInsert('test_class', ['test_id', 'class_id'], $rows)
+                ->execute();
         }
     }
-
     public function attributeLabels()
     {
         return [
@@ -90,6 +101,10 @@ class Tests extends ActiveRecord
         return $this->hasMany(Classes::class, ['id' => 'class_id'])
             ->viaTable('test_class', ['test_id' => 'id']);
     }
+    public function getTeacher()
+    {
+        return $this->hasOne(Teachers::class, ['id' => 'teacher_id']);
+    }
 
     public function isAccessibleByStudent($studentId)
     {
@@ -98,5 +113,9 @@ class Tests extends ActiveRecord
             return false;
         }
         return $this->getClasses()->andWhere(['id' => $student->class_id])->exists();
+    }
+    public function getTestResults()
+    {
+        return $this->hasMany(TestResults::class, ['test_id' => 'id']);
     }
 }

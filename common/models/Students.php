@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use PhpOffice\PhpSpreadsheet\IOFactory;
 use Yii;
 use yii\db\ActiveRecord;
 
@@ -19,6 +20,7 @@ use yii\db\ActiveRecord;
  * @property string|null $father_name
  * @property string|null $mother_name
  * @property string|null $mother_phone
+ * @property string|null $father_phone
  * @property string|null $father_workplace
  * @property string|null $mother_workplace
  * @property string|null $father_position
@@ -105,4 +107,9 @@ class Students extends ActiveRecord
     {
         return $this->hasOne(User::class, ['id' => 'user_id']);
     }
+    public function getClass()
+    {
+        return $this->hasOne(Classes::class, ['class' => 'class']);
+    }
+
 }

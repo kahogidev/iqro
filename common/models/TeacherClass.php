@@ -32,8 +32,9 @@ class TeacherClass extends ActiveRecord
     public function rules()
     {
         return [
-            [['teacher_id', 'class_id', 'subject'], 'required'],
+            [['teacher_id', 'class_id'], 'required'],
             [['teacher_id', 'class_id'], 'integer'],
+            [['subject'], 'default', 'value' => 'Default Subject'], // Set a default value
             [['subject'], 'string', 'max' => 255],
             [['teacher_id'], 'exist', 'skipOnError' => true, 'targetClass' => Teachers::class, 'targetAttribute' => ['teacher_id' => 'id']],
             [['class_id'], 'exist', 'skipOnError' => true, 'targetClass' => Classes::class, 'targetAttribute' => ['class_id' => 'id']],

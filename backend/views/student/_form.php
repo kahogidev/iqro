@@ -45,23 +45,29 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'mother_name')->textInput(['maxlength' => true]) ?>
         </div>
         <div class="col-md-4">
-            <?= $form->field($model, 'mother_phone')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'father_phone')->textInput(['maxlength' => true]) ?>
         </div>
+
+
     </div>
 
     <div class="row">
+        <div class="col-md-4">
+            <?= $form->field($model, 'mother_phone')->textInput(['maxlength' => true]) ?>
+        </div>
         <div class="col-md-4">
             <?= $form->field($model, 'father_workplace')->textInput(['maxlength' => true]) ?>
         </div>
         <div class="col-md-4">
             <?= $form->field($model, 'mother_workplace')->textInput(['maxlength' => true]) ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'father_position')->textInput(['maxlength' => true]) ?>
-        </div>
+
     </div>
 
     <div class="row">
+        <div class="col-md-4">
+            <?= $form->field($model, 'father_position')->textInput(['maxlength' => true]) ?>
+        </div>
         <div class="col-md-4">
             <?= $form->field($model, 'mother_position')->textInput(['maxlength' => true]) ?>
         </div>
@@ -69,38 +75,42 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'emergency_phone')->textInput(['maxlength' => true]) ?>
 
         </div>
+    </div>
+
+    <div class="row">
+
         <div class="col-md-4">
             <?= $form->field($model, 'emergency_contact')->textInput(['maxlength' => true]) ?>
 
         </div>
-    </div>
-
-    <div class="row">
         <div class="col-md-4">
+
             <?= $form->field($model, 'admission_date')->input('date') ?>
 
         </div>
         <div class="col-md-4">
             <?= $form->field($model, 'specialization')->textInput(['maxlength' => true]) ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'special_needs')->textarea(['rows' => 1]) ?>
-        </div>
+
     </div>
 
     <div class="row">
+        <div class="col-md-4">
+            <?= $form->field($model, 'special_needs')->textarea(['rows' => 1]) ?>
+        </div>
         <div class="col-md-4">
             <?= $form->field($model, 'behavior')->textarea(['rows' => 1]) ?>
         </div>
         <div class="col-md-4">
             <?= $form->field($model, 'talents')->textarea(['rows' => 1]) ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'health')->textarea(['rows' => 1]) ?>
-        </div>
+
     </div>
 
     <div class="row">
+        <div class="col-md-4">
+            <?= $form->field($model, 'health')->textarea(['rows' => 1]) ?>
+        </div>
         <div class="col-md-4">
             <?= $form->field($model, 'activities')->textarea(['rows' => 1]) ?>
 

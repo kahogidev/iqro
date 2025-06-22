@@ -16,14 +16,14 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tests-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h3><?= Html::encode($this->title) ?></h3>
 
-    <div class="card h-100 p-3 radius-12 m-3">
+    <div class="card h-100 p-1 radius-12 m-3">
 
     <div class="card-body p-24">
         <div class="table-responsive scroll-sm">
     <p>
-        <?= Html::a('Create Tests', ['create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Test yaratish', ['create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -42,21 +42,37 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
 //            'id',
-            'subject',
-            'title',
+            ['attribute'=>'subject',
+                'contentOptions' => ['style' => 'width: 100px;'],
+                ],
+
+            [
+                    'attribute' => 'title',
+                    'contentOptions' => ['style' => 'width: 150px;'],
+            ],
 //            'description:ntext',
-            'question_limit',
-            'start_time',
+            [
+                    'attribute' => 'question_limit',
+                    'contentOptions' => ['style' => 'width: 100px;'],
+
+            ],
+
+
+            ['attribute'=>'start_time',
+                'contentOptions' => ['style' => 'width: 150px;'],
+            ],
             //'end_time',
-            'created_by',
+
             [
                 'attribute' => 'assignedClasses',
                 'label' => 'Assigned Classes',
                 'value' => function ($model) {
                     return implode(', ', array_map(function ($class) {
-                        return $class->name;
-                    }, $model->assignedClasses));
+                        return $class->class . ' ' . $class->class_name;
+                    }, $model->classes));
                 },
+                'contentOptions' => ['style' => 'max-width: 100px;'],
+
             ],
 
             //'created_at',
@@ -68,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($model) {
                     return $model->is_imported ? '<span class="bg-success-focus text-success-600 border border-success-main px-24 py-4 radius-4 fw-medium text-sm">Yuklangan</span>' : '';
                 },
-                'contentOptions' => ['style' => 'text-align:center;'],
+                'contentOptions' => ['style' => 'width:100px'],
             ],
             [
                 'class' => ActionColumn::className(),
@@ -99,7 +115,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </button>
                     </form>
                     <a href="{$importUrl}" class="bg-success-focus text-success-600 bg-hover-success-200 fw-medium w-40-px h-40-px d-flex justify-content-center align-items-center rounded-circle">
-                     <iconify-icon  icon="lucide:edit" class="menu-icon"></iconify-icon>
+                     <iconify-icon  icon="lucide:upload" class="menu-icon"></iconify-icon>
                     </a>
                 </div>
 BUTTONS;
