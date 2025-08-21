@@ -96,62 +96,86 @@ class TestController extends Controller
      * @param int $id Test ID
      * @return string|\yii\web\Response
      */
-    public function actionTake($id)
-    {
-        $test = Tests::findOne($id);
-        if (!$test) {
-            throw new \yii\web\NotFoundHttpException('Test not found.');
-        }
+  
+public function actionTake($id)
+{
+    $test = Tests::findOne($id);
+    if (!$test) {
+        throw new \yii\web\NotFoundHttpException('Test not found.');
+    }
 
-        $questions = $test->questions;
-        $questionLimit = $test->question_limit; // Assuming `question_limit` is a property of the test
+    $questions = $test->questions;
+    $questionLimit = $test->question_limit;
 
-        // Shuffle and limit questions if necessary
-        if ($questionLimit && count($questions) > $questionLimit) {
-            shuffle($questions); // Randomize the order of questions
-            $questions = array_slice($questions, 0, $questionLimit); // Select only the limited number of questions
-        }
+    // Shuffle and limit questions
+    if ($questionLimit && count($questions) > $questionLimit) {
+        shuffle($questions);
+        $questions = array_slice($questions, 0, $questionLimit);
+    }
 
-        $shuffledQuestions = [];
-        foreach ($questions as $question) {
-            $answers = $question->answers instanceof \yii\db\ActiveQuery ? $question->answers->all() : $question->answers;
-            shuffle($answers); // Shuffle the answers
-            $shuffledQuestions[] = [
-                'question' => $question,
-                'shuffledAnswers' => $answers,
-            ];
-        }
+    // Prepare shuffled questions
+    $shuffledQuestions = [];
+    foreach ($questions as $question) {
+        $answers = $question->answers instanceof \yii\db\ActiveQuery ? $question->answers->all() : $question->answers;
+        shuffle($answers);
+        $shuffledQuestions[] = [
+            'question' => $question,
+            'shuffledAnswers' => $answers,
+        ];
+    }
 
-        if (Yii::$app->request->isPost) {
-            $answers = Yii::$app->request->post('answers', []);
-            $correct = 0;
-            foreach ($shuffledQuestions as $item) {
-                if (isset($answers[$item['question']->id])) {
-                    $selectedAnswer = \common\models\Answers::findOne($answers[$item['question']->id]);
-                    if ($selectedAnswer && $selectedAnswer->is_correct) {
-                        $correct++;
-                    }
+    // POST bo‘lsa – test yakunlandi
+    if (Yii::$app->request->isPost) {
+        $answers = Yii::$app->request->post('answers', []);
+        $correct = 0;
+
+        foreach ($shuffledQuestions as $item) {
+            if (isset($answers[$item['question']->id])) {
+                $selectedAnswer = \common\models\Answers::findOne($answers[$item['question']->id]);
+                if ($selectedAnswer && $selectedAnswer->is_correct) {
+                    $correct++;
                 }
             }
-
-            // Calculate percentage based on the question limit
-            $total = 6; // Use question limit if set
-            $percent = $total ? round($correct / $total * 100) : 0;
-            $timeTaken = time() - Yii::$app->session->get('test_start_time', time());
-            return $this->render('result', [
-                'correct' => $correct,
-                'total' => $total,
-                'percent' => $percent,
-                'timeTaken' => $timeTaken,
-            ]);
         }
 
-        Yii::$app->session->set('test_start_time', time());
-        return $this->render('take', [
-            'test' => $test,
-            'questions' => $shuffledQuestions, // Pass shuffled questions to the view
-        ]);
-    }    /**
+        $total = count($shuffledQuestions);
+        $percent = $total ? round($correct / $total * 100) : 0;
+        $timeTaken = time() - Yii::$app->session->get('test_start_time', time());
+
+        // Natijani saqlash
+        $result = new \common\models\TestResults();
+        $result->student_id = Yii::$app->user->id;
+        $result->test_id = $test->id;
+        $result->correct_answers = $correct;
+        $result->percentage = $percent;
+        $result->time_taken = $timeTaken;
+        $result->created_at = time();
+        $result->teacher_id = $test->created_by;
+        $result->save(false);
+
+        // Sessiyaga review uchun javoblarni saqlaymiz
+        Yii::$app->session->set('selected_answers', $answers);
+        Yii::$app->session->set('review_test_id', $test->id);
+
+        // Test yakunlangach, review sahifasiga yo‘naltiramiz
+        return $this->redirect(['student/test-review-temp']);
+    }
+
+    // Testni boshlash vaqti
+    Yii::$app->session->set('test_start_time', time());
+
+    return $this->render('take', [
+        'test' => $test,
+        'questions' => $shuffledQuestions,
+    ]);
+}
+
+
+
+
+
+
+    /**
      * Activate tests at their start time.
      */
     public function actionActivateTests()
@@ -346,6 +370,42 @@ class TestController extends Controller
         return $this->renderAjax('_student-details', [
             'results' => $results,
         ]);
+    }
+    
+    
+    public function actionDeleteStudentResult()
+{
+    Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
+    $data = json_decode(Yii::$app->request->getRawBody(), true);
+    $studentId = $data['studentId'] ?? null;
+
+    if (!$studentId) {
+        return ['success' => false, 'message' => 'O‘quvchi ID topilmadi.'];
+    }
+
+    try {
+        \common\models\TestResults::deleteAll(['student_id' => $studentId]);
+        return ['success' => true];
+    } catch (\Throwable $e) {
+        return ['success' => false, 'message' => $e->getMessage()];
+    }
+}
+
+    public function actionDeleteOneResult($id)
+    {
+        $result = \common\models\TestResults::findOne($id);
+
+        if (!$result) {
+            throw new \yii\web\NotFoundHttpException("Natija topilmadi.");
+        }
+
+        $result->delete();
+
+        Yii::$app->session->setFlash('success', 'Natija o‘chirildi.');
+
+        // Modal orqali emas, sahifani yangilayapti:
+        return $this->redirect(['test/overall-results']);
     }
 
 

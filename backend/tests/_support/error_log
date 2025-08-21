@@ -1,0 +1,48 @@
+[23-Jun-2025 08:04:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 08:04:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20
+[23-Jun-2025 13:00:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 13:00:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 13:00:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20
+[23-Jun-2025 13:00:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20
+[23-Jun-2025 15:42:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 15:42:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20
+[23-Jun-2025 21:34:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 21:34:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/FunctionalTester.php on line 20
+[23-Jun-2025 21:34:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20
+[23-Jun-2025 21:34:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Codeception\Actor" not found in /home/mahorats/public_html/backend/tests/_support/UnitTester.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/tests/_support/UnitTester.php on line 20

@@ -32,6 +32,9 @@ $this->title = 'Mening test natijalarim';
                 <td><?= Html::encode($result->correct_answers) ?></td>
                 <td><?= Html::encode($result->percentage) ?>%</td>
                 <td><?= Html::encode(Yii::$app->formatter->asDatetime($result->created_at)) ?></td>
+              <td><?php if (Yii::$app->session->has('selected_answers')): ?>
+    <?= Html::a('Ko‘rish', ['student/test-review-temp'], ['class' => 'btn btn-info btn-sm']) ?>
+<?php endif; ?></td>
             </tr>
         <?php endforeach; ?>
     <?php else: ?>

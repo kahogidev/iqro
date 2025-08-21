@@ -5,7 +5,6 @@ use yii\helpers\Url;
 ?>
 
 <div class="card h-100 p-3 radius-12 m-3">
-
     <div class="card-body p-24">
         <div class="table-responsive scroll-sm">
             <form method="get" action="<?= Url::to(['test/overall-results']) ?>">
@@ -15,7 +14,7 @@ use yii\helpers\Url;
                         <select name="class" id="class" class="form-control">
                             <option value="">Barcha sinflar</option>
                             <?php foreach (\common\models\Classes::find()->select(['class'])->distinct()->all() as $class): ?>
-                                <option value="<?= $class->class ?>" <?= $class == $class->class ? 'selected' : '' ?>>
+                                <option value="<?= $class->class ?>" <?= Yii::$app->request->get('class') == $class->class ? 'selected' : '' ?>>
                                     <?= $class->class ?>
                                 </option>
                             <?php endforeach; ?>
@@ -24,12 +23,12 @@ use yii\helpers\Url;
                     <div class="col-md-3">
                         <label for="sort_order">Natijasi bo'yicha saralash</label>
                         <select name="sort_order" id="sort_order" class="form-control">
-                            <option value="DESC" <?= isset($sortOrder) && $sortOrder == 'DESC' ? 'selected' : '' ?>>Yuqoridan pastga</option>
-                            <option value="ASC" <?= isset($sortOrder) && $sortOrder == 'ASC' ? 'selected' : '' ?>>Pastdan yuqoriga</option>
+                            <option value="DESC" <?= Yii::$app->request->get('sort_order', 'DESC') == 'DESC' ? 'selected' : '' ?>>Yuqoridan pastga</option>
+                            <option value="ASC" <?= Yii::$app->request->get('sort_order') == 'ASC' ? 'selected' : '' ?>>Pastdan yuqoriga</option>
                         </select>
                     </div>
                     <div class="col-md-3" style="margin-top: 15px;">
-                        <button type="submit"  class="btn btn-primary mt-10">Filtrlash</button>
+                        <button type="submit" class="btn btn-primary mt-10">Filtrlash</button>
                     </div>
                     <div class="col-md-3" style="margin-top: 15px;">
                         <a href="<?= Url::to(['test/overall-results-pdf', 'class' => Yii::$app->request->get('class'), 'sort_order' => Yii::$app->request->get('sort_order', 'DESC')]) ?>"
@@ -39,7 +38,7 @@ use yii\helpers\Url;
                     </div>
                 </div>
             </form>
-            <!-- Results Table -->
+
             <table class="table bordered-table sm-table mb-0">
                 <thead>
                 <tr>
@@ -56,11 +55,14 @@ use yii\helpers\Url;
                     <tr>
                         <td><?= $serialNumber++ ?></td>
                         <td><?= $student['first_name'] ?> <?= $student['last_name'] ?></td>
-                        <td><?= $student['class'].'-'.$student['class_name'] ?></td>
+                        <td><?= $student['class'] . '-' . $student['class_name'] ?></td>
                         <td><?= round($student['average_percentage'], 2) ?>%</td>
                         <td>
                             <button class="btn btn-primary btn-sm view-details" data-student-id="<?= $student['student_id'] ?>">
                                 Batafsil
+                            </button>
+                            <button class="btn btn-danger btn-sm delete-result" data-student-id="<?= $student['student_id'] ?>">
+                                O‘chirish
                             </button>
                         </td>
                     </tr>
@@ -99,4 +101,32 @@ use yii\helpers\Url;
                         });
                 });
             });
+
+            document.querySelectorAll('.delete-result').forEach(button => {
+                button.addEventListener('click', function () {
+                    const studentId = this.dataset.studentId;
+                    if (confirm("Rostdan ham bu o‘quvchining test natijalarini o‘chirmoqchimisiz?")) {
+                        fetch('<?= Url::to(['test/delete-student-result']) ?>', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-CSRF-Token': '<?= Yii::$app->request->getCsrfToken() ?>'
+                            },
+                            body: JSON.stringify({ studentId: studentId })
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                alert('Natijalar muvaffaqiyatli o‘chirildi.');
+                                location.reload();
+                            } else {
+                                alert('Xatolik: ' + data.message);
+                            }
+                        });
+                    }
+                });
+            });
         </script>
+    </div>
+</div>
+

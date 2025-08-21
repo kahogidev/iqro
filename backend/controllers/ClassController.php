@@ -215,19 +215,26 @@ class ClassController extends Controller
     }
 
 
-    public function actionRemoveStudent($group_id, $student_id)
-    {
-        $relation = StudentGroup::findOne(['group_id' => $group_id, 'student_id' => $student_id]);
+public function actionRemoveStudent($student_id, $class_id)
+{
+    Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
 
-        if ($relation) {
-            $relation->delete();
-            Yii::$app->session->setFlash('success', 'O‘quvchi sinfdan olib tashlandi.');
-        } else {
-            Yii::$app->session->setFlash('error', 'Bunday biriktirish topilmadi.');
-        }
+    $deleted = Yii::$app->db->createCommand()
+        ->delete('student_group', [
+            'student_id' => $student_id,
+            'group_id' => $class_id,
+        ])
+        ->execute();
 
-        return $this->redirect(['assign-students', 'id' => $group_id]);
+    if ($deleted) {
+        Yii::$app->session->setFlash('success', 'O‘quvchi sinfdan chiqarildi.');
+    } else {
+        Yii::$app->session->setFlash('error', 'O‘chirishda xatolik yuz berdi.');
     }
+
+    return $this->redirect(['class/assign-students', 'id' => $class_id]);
+}
+
     public function actionExportAssignedStudents($id)
     {
         $group = Classes::findOne($id);

@@ -1,0 +1,156 @@
+[23-Jun-2025 08:00:40 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 08:49:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:54:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:55:27 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:55:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:55:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:15 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:15 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:56:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 09:59:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:18:56 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:21:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:23:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:23:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:33:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:36:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:36:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 10:36:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 12:55:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 12:55:56 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:07:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:16:31 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:17:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:18:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:18:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 14:19:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 15:38:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 15:38:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 17:44:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 17:44:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 17:49:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 17:49:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 17:59:56 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 21:31:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13
+[23-Jun-2025 21:31:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/teacher/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/teacher/index.php on line 13

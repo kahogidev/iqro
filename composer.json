@@ -21,7 +21,8 @@
         "kartik-v/yii2-export": "@dev",
         "phpoffice/phpword": "^1.4",
         "phpoffice/phpspreadsheet": "1.0",
-        "mpdf/mpdf": "^8.2"
+        "mpdf/mpdf": "^8.2",
+      "ext-dom": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

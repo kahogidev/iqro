@@ -1,0 +1,32 @@
+[23-Jun-2025 08:00:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 08:49:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 12:55:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 12:55:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 14:07:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 15:38:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 21:31:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13
+[23-Jun-2025 21:31:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/question/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/question/index.php on line 13

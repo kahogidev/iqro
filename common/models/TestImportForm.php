@@ -1,9 +1,13 @@
 <?php
+
 namespace common\models;
 
-use Yii;
-use yii\base\Model;
 use PhpOffice\PhpWord\IOFactory;
+use yii\base\Model;
+use common\models\Questions;
+use common\models\Answers;
+use DOMDocument;
+use DOMXPath;
 
 class TestImportForm extends Model
 {
@@ -12,91 +16,121 @@ class TestImportForm extends Model
     public function rules()
     {
         return [
-            [['file'], 'file', 'extensions' => ['doc', 'docx'], 'skipOnEmpty' => false],
+            [['file'], 'file', 'skipOnEmpty' => false, 'extensions' => 'doc, docx'],
         ];
     }
 
-
     public function importQuestions($testId, $filePath)
     {
-        // Get the test model
         $test = \common\models\Tests::findOne($testId);
         if (!$test) {
-            throw new \Exception('Test not found.');
+            throw new \Exception('Test topilmadi.');
         }
 
-        // Read text from Word file
         $phpWord = IOFactory::load($filePath);
-        $text = '';
-        foreach ($phpWord->getSections() as $section) {
+        $sections = $phpWord->getSections();
+        $currentQuestion = null;
+        $currentAnswers = [];
+
+        foreach ($sections as $section) {
             foreach ($section->getElements() as $element) {
-                if (method_exists($element, 'getText')) {
-                    $text .= $element->getText() . "\n";
+                if (method_exists($element, 'getElements')) {
+                    foreach ($element->getElements() as $subElement) {
+                        if (method_exists($subElement, 'getText')) {
+                            $text = trim($subElement->getText());
+                        } elseif (method_exists($subElement, 'getContent')) {
+                            $text = trim($subElement->getContent());
+                        } else {
+                            continue;
+                        }
+
+                        // MathML formulani aniqlash va textga aylantirish
+                        if (stripos($text, '<m:oMath') !== false) {
+                            $text = $this->parseMathML($text);
+                        }
+
+                        if (preg_match('/^Q\s*:?\s*(.+)$/ui', $text, $matches)) {
+                            if ($currentQuestion && !empty($currentAnswers)) {
+                                $this->saveQuestion($test->id, $currentQuestion, $currentAnswers);
+                            }
+                            $currentQuestion = $matches[1];
+                            $currentAnswers = [];
+                        } elseif (preg_match('/^=\s*(.+)$/', $text, $matches)) {
+                            $currentAnswers[] = [
+                                'text' => $matches[1],
+                                'is_correct' => 1,
+                            ];
+                        } elseif (!empty($text)) {
+                            $currentAnswers[] = [
+                                'text' => $text,
+                                'is_correct' => 0,
+                            ];
+                        }
+                    }
                 }
             }
         }
 
-        // Parse questions
-        $blocks = preg_split('/(Q:|Question:)/i', $text, -1, PREG_SPLIT_NO_EMPTY);
-        $parsedQuestions = [];
-        foreach ($blocks as $block) {
-            $lines = array_filter(array_map('trim', explode("\n", $block)));
-            if (count($lines) < 2) continue;
-            $questionText = array_shift($lines);
-            $answers = [];
-            foreach ($lines as $opt) {
-                $isCorrect = false;
-                if (strpos($opt, '=') === 0) {
-                    $optText = ltrim($opt, '=');
-                    $isCorrect = true;
-                } else {
-                    $optText = $opt;
-                }
-                if ($optText !== '') {
-                    $answers[] = [
-                        'answer_text' => $optText,
-                        'is_correct' => $isCorrect,
-                    ];
-                }
-            }
-            if (count($answers) > 0) {
-                $parsedQuestions[] = [
-                    'question_text' => $questionText,
-                    'answers' => $answers,
-                ];
-            }
-        }
-
-        if (empty($parsedQuestions)) {
-            throw new \Exception('No questions found. Please check the file format.');
-        }
-
-        // Update or add questions and answers
-        foreach ($parsedQuestions as $qData) {
-            $question = \common\models\Questions::findOne([
-                'test_id' => $testId,
-                'question_text' => $qData['question_text'],
-            ]);
-
-            if (!$question) {
-                // Create new question
-                $question = new \common\models\Questions();
-                $question->test_id = $testId;
-                $question->question_text = $qData['question_text'];
-                $question->save(false);
-            } else {
-                // Update existing question
-                \common\models\Answers::deleteAll(['question_id' => $question->id]); // Remove old answers
-            }
-
-            // Save answers
-            foreach ($qData['answers'] as $aData) {
-                $answer = new \common\models\Answers();
-                $answer->question_id = $question->id;
-                $answer->answer_text = $aData['answer_text'];
-                $answer->is_correct = $aData['is_correct'];
-                $answer->save(false);
-            }
+        if ($currentQuestion && !empty($currentAnswers)) {
+            $this->saveQuestion($test->id, $currentQuestion, $currentAnswers);
         }
     }
-}
+
+    protected function saveQuestion($testId, $questionText, $answers)
+    {
+        $question = new Questions();
+        $question->test_id = $testId;
+        $question->question_text = $questionText;
+        $question->save(false);
+
+        foreach ($answers as $ans) {
+            $answer = new Answers();
+            $answer->question_id = $question->id;
+            $answer->answer_text = $ans['text'];
+            $answer->is_correct = $ans['is_correct'];
+            $answer->save(false);
+        }
+    }
+
+
+    protected function parseMathML($xml)
+    {
+        // MathML namespace aniqlanganligini tekshirish
+        if (strpos($xml, 'xmlns:m=') === false) {
+            $xml = str_replace(
+                '<m:oMath',
+                '<m:oMath xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"',
+                $xml
+            );
+        }
+
+        $doc = new DOMDocument();
+        libxml_use_internal_errors(true);
+        if (!$doc->loadXML($xml)) {
+            return '[FORMULA ERROR]';
+        }
+
+        $xpath = new DOMXPath($doc);
+        $xpath->registerNamespace("m", "http://schemas.openxmlformats.org/officeDocument/2006/math");
+
+        if ($xpath->query('//m:f')->length) {
+            $num = $xpath->query('//m:f/m:num//m:t')->item(0)->nodeValue ?? '?';
+            $den = $xpath->query('//m:f/m:den//m:t')->item(0)->nodeValue ?? '?';
+            return "$num/$den";
+        }
+
+        if ($xpath->query('//m:sup')->length) {
+            $base = $xpath->query('//m:sup/m:e//m:t')->item(0)->nodeValue ?? '?';
+            $exp = $xpath->query('//m:sup/m:sup//m:t')->item(0)->nodeValue ?? '?';
+            return "$base^$exp";
+        }
+
+        if ($xpath->query('//m:rad')->length) {
+            $deg = $xpath->query('//m:rad/m:deg//m:t')->item(0)->nodeValue ?? '';
+            $val = $xpath->query('//m:rad/m:e//m:t')->item(0)->nodeValue ?? '?';
+            return $deg ? "{$deg}√{$val}" : "√$val";
+        }
+
+        return strip_tags($xml);
+    }}
+

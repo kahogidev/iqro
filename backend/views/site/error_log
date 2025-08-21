@@ -1,0 +1,32 @@
+[23-Jun-2025 08:00:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 08:49:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 12:55:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 12:55:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 14:07:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 15:38:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 21:31:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5
+[23-Jun-2025 21:31:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/site/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/site/index.php on line 5

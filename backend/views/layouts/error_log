@@ -1,0 +1,48 @@
+[23-Jun-2025 08:04:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 08:04:40 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13
+[23-Jun-2025 13:01:01 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 13:01:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 13:01:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13
+[23-Jun-2025 13:01:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13
+[23-Jun-2025 15:42:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 15:42:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13
+[23-Jun-2025 21:34:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 21:34:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/blank.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/blank.php on line 9
+[23-Jun-2025 21:34:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13
+[23-Jun-2025 21:34:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "backend\assets\AppAsset" not found in /home/mahorats/public_html/backend/views/layouts/main.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/layouts/main.php on line 13

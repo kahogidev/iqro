@@ -1,0 +1,116 @@
+[23-Jun-2025 08:00:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 08:49:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 12:55:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 12:55:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 14:07:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 15:30:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 15:38:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 15:38:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 15:39:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 16:01:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 16:11:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 16:16:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 16:19:15 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 16:19:15 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:01:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:01:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:01:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:01:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:12:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:13:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:44:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:44:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:49:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 17:49:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 21:31:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 21:31:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[23-Jun-2025 22:22:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[24-Jun-2025 01:57:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15
+[24-Jun-2025 02:06:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mahorats/public_html/backend/views/student/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/views/student/index.php on line 15

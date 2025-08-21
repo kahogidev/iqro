@@ -1,0 +1,316 @@
+[23-Jun-2025 08:00:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 08:00:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 08:00:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 08:32:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 08:32:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 08:32:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 09:06:26 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:07:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:11:12 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:29:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:34:04 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:34:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:35:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:41:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:47:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:48:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:48:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:48:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 09:48:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 10:33:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 12:55:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 12:55:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 12:55:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 12:55:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 12:55:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 12:55:26 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 13:03:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 13:24:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 13:54:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 13:55:26 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 13:56:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 14:04:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 14:05:04 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 14:05:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:47:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:27 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:49:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:50:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:51:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:52:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 14:56:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:01:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:04:12 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:05:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:08:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:08:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:13:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:22:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:37:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 15:37:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 15:37:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 15:37:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:37:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 15:41:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:00:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:06:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:06:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:19:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:49:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 16:49:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 17:44:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 17:44:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 17:49:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 17:49:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 18:38:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 21:30:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 21:31:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\ArrayHelper" not found in /home/mahorats/public_html/backend/config/codeception-local.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/codeception-local.php on line 3
+[23-Jun-2025 21:31:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 21:31:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[23-Jun-2025 21:31:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 21:31:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[23-Jun-2025 21:43:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[24-Jun-2025 02:06:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31
+[24-Jun-2025 15:32:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_ENV_TEST" in /home/mahorats/public_html/backend/config/main-local.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main-local.php on line 12
+[24-Jun-2025 23:22:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Undefined constant "YII_DEBUG" in /home/mahorats/public_html/backend/config/main.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/config/main.php on line 31

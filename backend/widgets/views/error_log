@@ -1,0 +1,48 @@
+[23-Jun-2025 08:04:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 08:04:56 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4
+[23-Jun-2025 13:01:27 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 13:01:28 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 13:01:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4
+[23-Jun-2025 13:01:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4
+[23-Jun-2025 15:43:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 15:43:31 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4
+[23-Jun-2025 21:35:10 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 21:35:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\helpers\Html" not found in /home/mahorats/public_html/backend/widgets/views/header.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/header.php on line 32
+[23-Jun-2025 21:35:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4
+[23-Jun-2025 21:35:12 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "Yii" not found in /home/mahorats/public_html/backend/widgets/views/sidebar.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/widgets/views/sidebar.php on line 4

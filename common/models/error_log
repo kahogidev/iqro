@@ -1,0 +1,344 @@
+[23-Jun-2025 08:01:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 08:01:10 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 08:01:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 08:01:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 08:01:14 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 08:01:14 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 08:01:15 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 08:01:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 08:01:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 08:01:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 08:01:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 08:01:26 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 08:01:27 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 08:01:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 08:01:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26
+[23-Jun-2025 12:56:34 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 12:56:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 12:56:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 12:56:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 12:56:37 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 12:56:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 12:56:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 12:56:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 12:56:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 12:56:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 12:56:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 12:56:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 12:56:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 12:56:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 12:56:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 12:56:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 12:56:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 12:56:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 12:56:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 12:56:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 12:56:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 12:56:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 12:56:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 12:56:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 12:56:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 12:56:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 12:56:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26
+[23-Jun-2025 12:56:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26
+[23-Jun-2025 15:38:40 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 15:38:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 15:38:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 15:38:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 15:38:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 15:38:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 15:38:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 15:38:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 15:38:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 15:38:50 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 15:38:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 15:38:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 15:38:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 15:38:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 15:38:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26
+[23-Jun-2025 21:31:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 21:31:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Answers.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Answers.php on line 20
+[23-Jun-2025 21:31:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 21:31:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Classes.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Classes.php on line 17
+[23-Jun-2025 21:31:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 21:31:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/ExcelImportForm.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/ExcelImportForm.php on line 10
+[23-Jun-2025 21:31:55 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 21:31:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/LoginForm.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/LoginForm.php on line 11
+[23-Jun-2025 21:31:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 21:31:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Questions.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Questions.php on line 20
+[23-Jun-2025 21:31:58 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 21:31:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/StudentGroup.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/StudentGroup.php on line 20
+[23-Jun-2025 21:31:59 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 21:32:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Students.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Students.php on line 40
+[23-Jun-2025 21:32:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 21:32:01 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TeacherClass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TeacherClass.php on line 19
+[23-Jun-2025 21:32:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 21:32:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Teachers.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Teachers.php on line 44
+[23-Jun-2025 21:32:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 21:32:04 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestAssignments.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestAssignments.php on line 22
+[23-Jun-2025 21:32:04 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 21:32:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\base\Model" not found in /home/mahorats/public_html/common/models/TestImportForm.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestImportForm.php on line 8
+[23-Jun-2025 21:32:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 21:32:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/TestResults.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/TestResults.php on line 7
+[23-Jun-2025 21:32:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 21:32:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/Tests.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/Tests.php on line 8
+[23-Jun-2025 21:32:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26
+[23-Jun-2025 21:32:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\db\ActiveRecord" not found in /home/mahorats/public_html/common/models/User.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/User.php on line 26

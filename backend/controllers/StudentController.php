@@ -322,5 +322,51 @@ class StudentController extends Controller
 
         return Yii::$app->response->sendFile($filePath);
     }
+public function actionTestReviewTemp()
+{
+    $answers = Yii::$app->session->get('selected_answers');
+    $testId = Yii::$app->session->get('review_test_id');
+
+    if (!$answers || !$testId) {
+        throw new NotFoundHttpException('Ma’lumot topilmadi yoki sessiya muddati tugagan.');
+    }
+
+    $test = Tests::findOne($testId);
+    if (!$test) {
+        throw new NotFoundHttpException('Test topilmadi.');
+    }
+
+    $questions = $test->questions;
+
+    // Savollar va javoblarni tayyorlash
+    $reviewData = [];
+    foreach ($questions as $question) {
+        $allAnswers = $question->answers;
+        $selectedAnswerId = $answers[$question->id] ?? null;
+        $selectedAnswer = $selectedAnswerId ? \common\models\Answers::findOne($selectedAnswerId) : null;
+        $correctAnswer = null;
+        foreach ($allAnswers as $ans) {
+            if ($ans->is_correct) {
+                $correctAnswer = $ans;
+                break;
+            }
+        }
+
+        $reviewData[] = [
+            'question' => $question,
+            'selectedAnswer' => $selectedAnswer,
+            'correctAnswer' => $correctAnswer,
+            'isCorrect' => $selectedAnswer && $selectedAnswer->is_correct,
+        ];
+    }
+
+    return $this->render('test-review-temp', [
+        'test' => $test,
+        'reviewData' => $reviewData,
+    ]);
+}
+
+
+    
 
 }

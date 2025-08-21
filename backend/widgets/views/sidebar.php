@@ -8,10 +8,10 @@ $user = Yii::$app->user->identity;
         <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
     </button>
     <div>
-        <a href="index.html" class="sidebar-logo">
-            <img src="/images/logo.png" alt="site logo" class="light-logo">
-            <img src="/images/logo-light.png" alt="site logo" class="dark-logo">
-            <img src="/images/logo-icon.png" alt="site logo" class="logo-icon">
+        <a href="#" class="sidebar-logo">
+            <img src="/images/logo-admin.jpg" alt="site logo" class="light-logo">
+            <img src="/images/logo-dark.png" alt="site logo" class="dark-logo">
+            <img src="/images/mahorat.png" alt="site logo" class="logo-icon">
         </a>
     </div>
     <div class="sidebar-menu-area">

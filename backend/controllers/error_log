@@ -1,0 +1,512 @@
+[23-Jun-2025 08:00:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 08:00:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 08:00:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 08:00:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 08:00:26 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 08:00:28 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 08:36:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 08:36:28 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 08:36:56 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 08:37:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 08:37:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 08:37:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 09:17:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:19:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:22:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:30:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:31:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:35:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:40:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:41:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:46:12 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:47:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:47:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:48:10 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:52:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:52:16 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:56:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:56:31 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:56:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:56:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 09:58:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:58:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 09:58:10 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 10:13:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 10:18:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 10:18:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 10:18:31 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 10:33:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 10:33:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 10:56:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 12:55:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 12:55:30 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 12:55:31 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 12:55:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 12:55:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 12:55:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 12:55:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 12:55:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 12:55:35 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 12:55:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 12:55:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 12:55:38 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 13:20:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 13:24:03 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 13:51:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 13:59:14 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 14:04:00 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 14:05:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 14:05:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 14:05:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 14:05:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 14:05:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 14:05:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 14:05:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 15:00:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:03:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:12:29 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:15:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:19:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 15:26:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:28:18 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:28:28 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:30:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:31:32 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:33:36 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:37:47 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 15:37:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 15:37:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 15:37:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:37:50 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 15:37:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 15:37:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 15:37:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 15:37:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 15:37:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 15:50:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:11:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:16:53 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:18:17 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:19:57 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:29:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 16:29:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 16:29:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 16:29:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 16:53:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:53:13 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 16:54:33 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 16:55:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 17:04:01 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 17:44:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 17:44:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 17:44:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 17:44:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 17:49:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 17:49:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 17:49:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 17:49:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 18:20:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 18:29:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 21:31:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 21:31:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/ClassController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/ClassController.php on line 22
+[23-Jun-2025 21:31:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 21:31:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[23-Jun-2025 21:31:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 21:31:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[23-Jun-2025 21:31:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 21:31:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/StudentController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/StudentController.php on line 20
+[23-Jun-2025 21:31:10 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 21:31:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TeacherController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TeacherController.php on line 14
+[23-Jun-2025 21:31:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 21:31:12 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 22:29:01 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[23-Jun-2025 22:41:02 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[24-Jun-2025 00:57:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/SiteController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/SiteController.php on line 12
+[24-Jun-2025 01:23:04 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[24-Jun-2025 02:06:54 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18
+[24-Jun-2025 15:24:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/QuestionController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/QuestionController.php on line 15
+[25-Jun-2025 00:02:51 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "yii\web\Controller" not found in /home/mahorats/public_html/backend/controllers/TestController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/backend/controllers/TestController.php on line 18

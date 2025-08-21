@@ -1,0 +1,144 @@
+[23-Jun-2025 08:05:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 08:05:06 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 08:05:07 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 08:05:08 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 08:05:09 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 08:05:11 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12
+[23-Jun-2025 13:01:39 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 13:01:40 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 13:01:40 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 13:01:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 13:01:41 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 13:01:42 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 13:01:43 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 13:01:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 13:01:44 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 13:01:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 13:01:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12
+[23-Jun-2025 13:01:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12
+[23-Jun-2025 15:43:45 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 15:43:46 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 15:43:48 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 15:43:49 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 15:43:50 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 15:43:52 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12
+[23-Jun-2025 21:35:19 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 21:35:20 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Classes" not found in /home/mahorats/public_html/common/models/search/ClassesSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/ClassesSearch.php on line 12
+[23-Jun-2025 21:35:21 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 21:35:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Questions" not found in /home/mahorats/public_html/common/models/search/QuestionsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/QuestionsSearch.php on line 12
+[23-Jun-2025 21:35:22 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 21:35:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Students" not found in /home/mahorats/public_html/common/models/search/StudentsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/StudentsSearch.php on line 12
+[23-Jun-2025 21:35:23 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 21:35:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Teachers" not found in /home/mahorats/public_html/common/models/search/TeachersSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TeachersSearch.php on line 12
+[23-Jun-2025 21:35:24 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 21:35:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\Tests" not found in /home/mahorats/public_html/common/models/search/TestsSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/TestsSearch.php on line 12
+[23-Jun-2025 21:35:25 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12
+[23-Jun-2025 21:35:27 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Class "common\models\User" not found in /home/mahorats/public_html/common/models/search/UserSearch.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/mahorats/public_html/common/models/search/UserSearch.php on line 12

@@ -2,7 +2,6 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-$endTime = $startTime + $duration;
 $form = ActiveForm::begin([
     'id' => 'test-form',
     'action' => ['student/complete-test', 'testId' => $test->id], // Submit to actionCompleteTest
@@ -64,7 +63,7 @@ function startCountdown(endTime) {
     }
     updateTimer();
 }
-startCountdown(<?= $endTime ?>);
+startCountdown();
 JS;
 $this->registerJs($js);
 ?>

@@ -72,8 +72,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                         //'birth_place',
                         //'address',
-                        //'father_name',
-                        //'mother_name',
+                        'father_name',
+                        'mother_name',
                         //'mother_phone',
                         //'father_workplace',
                         //'mother_workplace',
@@ -95,7 +95,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'headerOptions' => ['style' => 'text-align:center'],
                             'template' => '{buttons}',
                             'contentOptions' => [
-                                'style' => 'min-width:150px;max-width:150px;width:150px',
+                                'style' => 'min-width:150px;max-width:250px;width:150px',
                                 'class' => 'v-align-middle'
                             ],
                             'buttons' => [
